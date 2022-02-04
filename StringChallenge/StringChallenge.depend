@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1643255271 source:c:\users\pveso\documents\c_course\projects\stringchallenge\main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	<malloc.h>
+

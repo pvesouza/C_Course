@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1638558405 source:c:\users\pveso\documents\c_course\projects\date\data\date.c
+	"Date.h"
+	<stdbool.h>
+
+1638558355 c:\users\pveso\documents\c_course\projects\date\data\date.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1638561418 source:c:\users\pveso\documents\c_course\projects\date\data\main.c
+	"Date.h"
+	<string.h>
+

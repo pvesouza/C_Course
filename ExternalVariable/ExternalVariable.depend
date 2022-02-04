@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1638573966 source:c:\users\pveso\documents\c_course\projects\externalvariable\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1638574030 source:c:\users\pveso\documents\c_course\projects\externalvariable\implement.c
+	"implement.h"
+	<stdio.h>
+
+1638573744 c:\users\pveso\documents\c_course\projects\externalvariable\implement.h
+

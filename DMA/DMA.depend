@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1641432128 source:c:\users\pveso\documents\c_course\projects\dma\main.c
+	<stdio.h>
+	<stdlib.h>
+	"data.h"
+
+1641432111 c:\users\pveso\documents\c_course\projects\dma\data.h
+

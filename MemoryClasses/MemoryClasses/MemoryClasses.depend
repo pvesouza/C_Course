@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1638572459 source:c:\users\pveso\documents\c_course\projects\memoryclasses\memoryclasses\calcs.c
+	"calcs.h"
+	<stdio.h>
+
+1638571459 c:\users\pveso\documents\c_course\projects\memoryclasses\memoryclasses\calcs.h
+
+1638572584 source:c:\users\pveso\documents\c_course\projects\memoryclasses\memoryclasses\main.c
+	<stdio.h>
+	<stdlib.h>
+	"calcs.h"
+
+1638572435 source:c:\users\pveso\documents\c_course\projects\memoryclasses\memoryclasses\constants.c
+	"constants.h"
+
+1638572435 c:\users\pveso\documents\c_course\projects\memoryclasses\memoryclasses\constants.h
+

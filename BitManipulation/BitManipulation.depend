@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1642457336 source:c:\users\pveso\documents\c_course\projects\bitmanipulation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<malloc.h>
+	<math.h>
+

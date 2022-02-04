@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1641491797 source:c:\users\pveso\documents\c_course\projects\complexnumbers\main.c
+	<stdio.h>
+	<stdlib.h>
+	"complex.h"
+
+1641491831 c:\users\pveso\documents\c_course\projects\complexnumbers\complex.h
+
+1641481898 c:\users\pveso\documents\c_course\projects\complexnumbers\complex.c
+	"complex.h"
+	<stdio.h>
+
+1641491860 source:c:\users\pveso\documents\c_course\projects\complexnumbers\complex.c
+	"complex.h"
+
