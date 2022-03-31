@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1648696187 source:c:\users\pveso\documents\c_course\projects\gradientdescent_lr\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<malloc.h>
+	<stdbool.h>
+	"math_helper.h"
+
+1648696915 c:\users\pveso\documents\c_course\projects\gradientdescent_lr\math_helper.h
+	<math.h>
+
