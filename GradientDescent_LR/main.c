@@ -37,21 +37,30 @@ int main()
         13.00,
         18.00,
         21.50
-    };
+    };                  // Vector yi of the training set
 
-    printDataSet(xi, m);
+    double myMean = mean(yi, m);
+    double myStdDeviation = stdeviation(yi, m);
 
     normalizeDataSet(xi, m);
-
-    printDataSet(yi, m);
-
     normalizeDataSet(yi, m);
+    printDataSet(xi, m);
+    printDataSet(yi, m);
 
     gradientDescent(xi, yi, 0.0, 0.0);
 
     double cost = costFunction(xi, yi, m, __theta0, __theta1);
+    //__theta0 = unormalize(__theta0, myMean, myStdDeviation);
+    //__theta1 = unormalize(__theta1, myMean, myStdDeviation);
 
-    printf("J(%.2f,%.2f) = %.2f", __theta0, __theta1, cost);
+    printf("J(%.2f,%.2f) = %.2f\n", __theta0, __theta1, cost);
+
+    for (int i = 0; i < m; i++) {
+        double hx = hipothesis(__theta0, __theta1, xi[i]);
+        double hxNormal = unormalize(hx, myMean, myStdDeviation);
+        printf("h(x) = %.2f\n", hx);
+        printf("h(x) = %.2f\n", hxNormal);
+    }
 
     return 0;
 }
@@ -77,12 +86,8 @@ void gradientDescent(double *xi, double *yi, double theta0_initial, double theta
         theta1_temp = theta1 - calcTheta1(xi, yi, m, theta0, theta1);
         ephocs++;
 
-        //printf("%d- (%.2f, %.2f)\n", ephocs, theta0_temp, theta1_temp);
-
         double dif0 = fabs(theta0 - theta0_temp);
         double dif1 = fabs(theta1 - theta1_temp);
-
-        //printf("%d- (%.2f, %.2f)\n", ephocs, dif0, dif1);
 
         if ((dif0 < CONVERGENCE && dif1 <= CONVERGENCE) || ephocs > 500) {
             end = true;
@@ -92,6 +97,7 @@ void gradientDescent(double *xi, double *yi, double theta0_initial, double theta
             theta1 = theta1_temp;
         }
         printf("%d- (%.2f, %.2f)\n", ephocs, theta0, theta1);
+        printf("J(%.2f, %.2f) = %f\n", theta0, theta1, costFunction(xi, yi, m, theta0, theta1));
     }
     __theta0 = theta0;
     __theta1 = theta1;

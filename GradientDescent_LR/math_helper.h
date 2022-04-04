@@ -33,6 +33,7 @@ void normalizeDataSet(double *dataSet, int n_samples) {
     double _mean = mean(dataSet, n_samples);
     double _stdeviation = stdeviation(dataSet, n_samples);
     double value = 0.0;
+    //printf("Mean: %f Std: %f", _mean, _stdeviation);
 
     for (int i = 0; i < n_samples; i++) {
         value = *(dataSet + i);
@@ -66,10 +67,8 @@ double calcTheta1(double *xi, double *yi, int n_samples, double theta0, double t
         double y = *(yi + i);
         double h = hipothesis(theta0, theta1, x);
         sum = sum + (h - y) * x;
-
-        //printf("%f    %f   % f   %f\n", x, y, h, sum);
-
     }
+
     return ((sum * alpha) / n_samples);
 }
 
@@ -81,9 +80,14 @@ double costFunction(double *xi, double *yi, int n_samples, double theta0, double
         double y = *(yi + i);
         double h = hipothesis(theta0, theta1, x);
         sum = sum + pow((h - y), 2);
-        //printf("%f    %f   % f   %f\n", x, y, h, sum);
     }
     return (sum  / (2 * n_samples));
+}
+
+double unormalize(double x, double mean, double stdDev) {
+    double value = 0.0;
+    value = x * stdDev + mean;
+    return value;
 }
 
 
