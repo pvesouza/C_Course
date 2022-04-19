@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1649523848 source:c:\users\pveso\documents\c_course\projects\advancedpointers\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<string.h>
+
