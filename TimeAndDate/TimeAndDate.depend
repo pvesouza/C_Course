@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1677436739 source:c:\users\pveso\documents\c_course\projects\timeanddate\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"timeLib.c"
+
+1677437682 c:\users\pveso\documents\c_course\projects\timeanddate\timelib.c
+	"TimeLib.h"
+
+1677435957 c:\users\pveso\documents\c_course\projects\timeanddate\timelib.h
+	<time.h>
+	<assert.h>
+	<stdio.h>
+

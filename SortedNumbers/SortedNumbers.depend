@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1677427897 source:c:\users\pveso\documents\c_course\projects\sortednumbers\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sortedLib.c"
+
+1677426348 c:\users\pveso\documents\c_course\projects\sortednumbers\sortedlib.h
+
+1677437362 c:\users\pveso\documents\c_course\projects\sortednumbers\sortedlib.c
+	<stdio.h>
+	<time.h>
+
